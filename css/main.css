@@ -1,0 +1,43 @@
+
+.jumbotron {
+    background-color:#00F0B5;
+}
+
+.descripcion {
+    font-style: italic;
+    padding-top: 10px;
+}
+
+footer {
+    padding: 15px;
+    background-color: #E0E3DD;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+.conteiner {
+    margin: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-hotel {
+    flex: 1 300px;
+    margin-top:10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.card {
+        border: 0px;
+        margin: 10px;
+        /*box-shadow: 0px 3px 15px 0px rgb(173, 173, 173,0.5);*/
+}
+
+.btn {
+    
+}
