@@ -1,6 +1,7 @@
 
 .jumbotron {
-    background-color:#00F0B5;
+    color: white;
+    background-color: rgb(83, 105, 180);
 }
 
 .descripcion {
@@ -10,7 +11,6 @@
 
 footer {
     padding: 15px;
-    background-color: #E0E3DD;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -38,6 +38,8 @@ body {
         /*box-shadow: 0px 3px 15px 0px rgb(173, 173, 173,0.5);*/
 }
 
-.btn {
-    
+.card-foot {
+    flex: 1 250px;
+    padding: 20px;
+    background-color: rgb(83, 105, 180);
 }

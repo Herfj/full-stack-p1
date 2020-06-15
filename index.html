@@ -11,6 +11,13 @@
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/css/main.css" >
 
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="/node_modules/popper.js/dist/popper-utils.min.js"></script>
+		<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		
+
 		<title>¿HOTEL?</title>
   	</head>
   	<body>
@@ -151,10 +158,10 @@
 				<!--HOTEL 1-->
 				<div class="card card-hotel justify-content-between shadow p-3 mb-5 bg-white rounded-lg"> 
 					<div class="card-header bg-white" >
-						
-						<h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Oferta de tiempo limitado!">Hotel del Sol <span style=" background-color: red; " class="badge badge-danger float-right">
+						<h4><span style=" background-color: red; " class="badge badge-danger">
 							15% Descuento!
 						</span></h4>
+						<h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Oferta de tiempo limitado!">Hotel del Sol </h4>
 						<h6 class="card-subtitle text-muted">Miami</h6>
 					</div>
 					<div class="card-body">
@@ -166,7 +173,7 @@
 						</p>
 					</div>
 					<div class="card-footer bg-white">
-						<button class="btn btn-primary shadow p-3 mb rounded btn-block" data-toggle="modal" data-target="#reserva-hotel">
+						<button class="btn btn-primary shadow p-3 mb rounded btn-block reservaBtn" data-toggle="modal" data-target="#reserva-hotel" >
 							<span class="oi oi-check"></span>
 							Reservar YA!
 						</button>
@@ -175,7 +182,8 @@
 				<!--HOTEL 2-->
 				<div class="card card-hotel  justify-content-between shadow p-3 mb-5 bg-white rounded-lg"> 
 					<div class="card-header bg-white" >
-						<h4 class="card-title">Hotel Lanoelica <span  class="badge badge-success float-right">Nuevo</span></h4>
+						<h4><span  class="badge badge-success ">Nuevo</span></h4>
+						<h4 class="card-title">Hotel Lanoelica </h4>
 						<h6 class="card-subtitle text-muted">Rio de Janeiro</h6>
 					</div>
 					<div class="card-body">
@@ -187,7 +195,7 @@
 					</p>
 					</div>
 					<div class="card-footer bg-white">
-						<button class="btn btn-primary shadow p-3 mb rounded btn-block" data-toggle="modal" data-target="#reserva-hotel">
+						<button class="btn btn-primary shadow p-3 mb rounded btn-block reservaBtn" data-toggle="modal" data-target="#reserva-hotel"  >
 							<span class="oi oi-check"></span>
 							Reservar YA!
 						</button>
@@ -207,7 +215,7 @@
 					</p>
 					</div>
 					<div class="card-footer bg-white">
-						<button class="btn btn-primary shadow p-3 mb rounded btn-block" data-toggle="modal" data-target="#reserva-hotel">
+						<button class="btn btn-primary shadow p-3 mb rounded btn-block reservaBtn" data-toggle="modal" data-target="#reserva-hotel" >
 							<span class="oi oi-check"></span>
 							Reservar YA!
 						</button>
@@ -227,7 +235,7 @@
 					</p>
 					</div>
 					<div class="card-footer bg-white">
-						<button class="btn btn-primary shadow p-3 mb rounded btn-block" data-toggle="modal" data-target="#reserva-hotel">
+						<button class="btn btn-primary shadow p-3 mb rounded btn-block reservaBtn" data-toggle="modal" data-target="#reserva-hotel">
 							<span class="oi oi-check"></span>
 							Reservar YA!
 						</button>
@@ -247,7 +255,7 @@
 					</p>
 					</div>
 					<div class="card-footer bg-white">
-						<button class="btn btn-primary shadow p-3 mb rounded btn-block" data-toggle="modal" data-target="#reserva-hotel">
+						<button class="btn btn-primary shadow p-3 mb rounded btn-block reservaBtn" data-toggle="modal" data-target="#reserva-hotel" >
 							<span class="oi oi-check"></span>
 							Reservar YA!
 						</button>
@@ -267,7 +275,7 @@
 					</p>
 					</div>
 					<div class="card-footer bg-white">
-						<button class="btn btn-primary shadow p-3 mb rounded btn-block" data-toggle="modal" data-target="#reserva-hotel">
+						<button class="btn btn-primary shadow p-3 mb rounded btn-block reservaBtn" data-toggle="modal" data-target="#reserva-hotel"  >
 							<span class="oi oi-check"></span>
 							Reservar YA!
 						</button>
@@ -275,7 +283,8 @@
 				</div>
 				<div class="card card-hotel  justify-content-between shadow p-3 mb-5 bg-white rounded-lg"> 
 					<div class="card-header bg-white" >
-						<h4 class="card-title">Hotel SPPAAAA<span style="color: white;" class="badge badge-warning float-right">Pocas disponibles!</span></h4>
+						<h4><span style="color: white;" class="badge badge-warning ">Pocas disponibles!</span></h4>
+						<h4 class="card-title">Hotel SPPAAAA</h4>
 						<h6 class="card-subtitle text-muted">Rio de Janeiro</h6>
 					</div>
 					<div class="card-body">
@@ -287,7 +296,7 @@
 					</p>
 					</div>
 					<div class="card-footer bg-white">
-						<button class="btn btn-primary shadow p-3 mb rounded btn-block" data-toggle="modal" data-target="#reserva-hotel">
+						<button class="btn btn-primary shadow p-3 mb rounded btn-block reservaBtn" data-toggle="modal" data-target="#reserva-hotel" >
 							<span class="oi oi-check"></span>
 							Reservar YA!
 						</button>
@@ -525,21 +534,33 @@
 				</div>
 			</div>
 		</footer>
-
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="/node_modules/jquery/dist/jquery.min.js"></script>
-		<script src="/node_modules/popper.js/dist/popper-utils.min.js"></script>
-		<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script>
-			$(function){
-				$("[data-toggle="tooltip"]").tooltip();
-				$("[data-toggle="popover"]").popover();
-				$('.carousel').carousel({
-					interval: 100
+			$(document).ready(function(){
+				//$("[data-toggle='tooltip']").tooltip();
+				//$("[data-toggle='popover']").popover();
+				//$('.carousel').carousel({
+				//	interval: 1000
+				//});
+				//$("#reservaBtn").click(function(){
+				//	$("#reserva-hotel").modal("show");
+				//});
+				$("#carouselIndicators").carousel({
+					interval: 2500
 				});
-
-			}
-		</script>
+				$("#reserva-hotel").on('show.bs.modal', function(){
+					console.log('por fin lo logre')		
+			
+					$('.reservaBtn').prop('disabled', true);
+				});
+				$("#reserva-hotel").on('hide.bs.modal', function(){
+					console.log('por fin lo logre lo oculto')		
+			
+					$('.reservaBtn').prop('disabled', false);
+				});
+					
+				
+			
+			});
+			</script>
 	</body>
 </html>
