@@ -1,21 +1,55 @@
 {
   "name": "p1",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "p1 - nodejs",
   "main": "index.html",
   "scripts": {
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange -i 'css/*.scss' -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin images/* --out-dir dist/images",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin prices.html -d dist --htmlmin -o dist/prices.html && usemin contact.html -d dist --htmlmin -o dist/contact.html",
+    "build": " npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "author": "Hernan Fabrica",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "copyfiles": "^2.3.0",
+    "cssmin": "^0.4.3",
+    "grunt": "^1.1.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-filerev": "^2.3.1",
+    "grunt-usemin": "^3.1.1",
+    "htmlmin": "0.0.7",
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2",
+    "rimraf": "^3.0.2",
+    "time-grunt": "^2.0.0",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
+    "concurrently": "^5.2.0",
+    "grunt-sas": "^1.2.0",
+    "imagemin-cli": "^6.0.0",
+    "jit-grunt": "^0.10.0",
     "jquery": "^3.5.1",
     "open-iconic": "^1.1.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "ruby": "^0.6.1",
+    "sass": "^1.26.8"
   }
 }

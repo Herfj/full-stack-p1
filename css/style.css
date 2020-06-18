@@ -1,0 +1,62 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.jumbotron {
+  background-color: #0069b4;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 0px;
+}
+.jumbotron h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+.conteiner {
+  margin: 30px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.card {
+  border: 2px;
+  margin: 10px;
+}
+
+.card-hotel {
+  flex: 1 300px;
+  margin-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.descripcion {
+  font-style: italic;
+  padding-top: 10px;
+}
+
+footer {
+  padding: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-foot {
+  flex: 1 250px;
+  padding: 20px;
+  background-color: #0069b4;
+}
+
+/*Bootstrap*/
+.badge-danger {
+  background-color: red;
+}
+
+.card-img-top {
+  padding-top: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
